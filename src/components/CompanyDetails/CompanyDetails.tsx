@@ -129,9 +129,9 @@ function CompanyDetails(props: {
               <div className="opacity-50 text-[13px] tracking-[0.25px] leading-[20px w-[160px] max-sm:w-[100px]">
                 Company type:
               </div>
-              <div className="opacity-80 text-[14px] tracking-[0.3px] leading-[24px] flex-1 flex max-sm:flex-col">
+              <div className="opacity-80 text-[14px] tracking-[0.3px] leading-[24px] flex-1 flex max-sm:flex-col gap-[5px]">
                 {CompanyType.map((itemType, index) => (
-                  <div key={index}>{itemType}</div>
+                  <div key={index}>{itemType}{index !== CompanyType.length-1 && ","}</div>
                 ))}
               </div>
             </div>
